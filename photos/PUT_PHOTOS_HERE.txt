@@ -1,0 +1,11 @@
+Drop your photos in this folder using these exact filenames.
+Until you do, each spot shows an elegant glowing placeholder — nothing breaks.
+
+proposal.jpg        -> the day you told her (Chapter IV)
+umbrella.jpg         -> the rainy umbrella photo (Chapter VIII)
+durga-puja.jpg        -> Durga Puja / Kolkata photo (Chapter VII)
+saraswati-puja.jpg    -> the saree photo from 11th grade (Chapter III)
+ho-gang.jpg           -> the HO gang group photo (Chapter II)
+
+Any normal .jpg or .png works. Delete this file whenever you like —
+it's not read by the website.

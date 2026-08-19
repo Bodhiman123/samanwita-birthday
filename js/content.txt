@@ -1,0 +1,507 @@
+/* ============================================================
+   OUR STORY — edit everything here.
+   You do not need to touch any other file.
+
+   - Change MY_NAME below to your name.
+   - Photos: drop image files into /photos using the filenames
+     listed in each `photo:` field. Until you do, a soft glowing
+     placeholder is shown automatically — nothing breaks.
+   - Music: drop an mp3 into /audio/our-song.mp3 (see AUDIO below).
+   - Every block of text can be edited safely. Keep the quotes.
+   ============================================================ */
+
+const STORY = {
+
+  // ===== EDIT YOUR STORY HERE =====
+  HER_NAME: "Samanwita",
+  HER_AGE: 21,
+  MY_NAME: "BODHISATTWA SARKAR", // <-- change this to your name
+
+  AUDIO: {
+    // Put a file at /audio/our-song.mp3 and this will just work.
+    src: "audio/our-song.mp3",
+    label: "Play our song",
+  },
+
+  // ---------- PROLOGUE ----------
+  prologue: {
+    address: "To Samanwita,",
+    lines: [
+      "Some stories begin with a first meeting.",
+      "Ours began much earlier.",
+      "You just didn't know it yet.",
+    ],
+    button: "Open our story",
+  },
+
+  // ---------- CHAPTERS ----------
+  chapters: [
+    {
+      id: 1,
+      roman: "I",
+      title: "Before We Knew",
+      mood: "curious",
+      blocks: [
+        { type: "text", lines: [
+          "We were in the same school since nursery.",
+          "Different sections, though.",
+          "So I didn't really know you.",
+        ]},
+        { type: "text", lines: [
+          "Then we both changed schools.",
+          "Somehow — same class. Same section.",
+        ]},
+        { type: "pathmotif" },
+        { type: "text", lines: [
+          "We still weren't close.",
+          "Just two classmates who happened to keep landing",
+          "in the same room.",
+        ]},
+      ],
+      outro: [
+        "We kept crossing paths.",
+        "But neither of us knew why.",
+      ],
+    },
+
+    {
+      id: 2,
+      roman: "II",
+      title: "The Girl I Didn't Expect",
+      mood: "playful",
+      blocks: [
+        { type: "text", lines: [
+          "You once complained about me — you thought I was",
+          "bullying another guy.",
+          "For a while after that, I didn't like you much.",
+        ]},
+        { type: "text", lines: [
+          "Years later, I liked your best friend, Sonia.",
+          "You kept getting in the way of that.",
+          "It annoyed me at the time.",
+        ]},
+        { type: "text", small: true, lines: [
+          "The girl who would eventually become my girlfriend",
+          "was once, very inconveniently, blocking my crush on",
+          "someone else.",
+        ]},
+        { type: "text", lines: [
+          "Near the end of 11th, five or six of us became",
+          "the HO gang.",
+        ]},
+        { type: "photo", file: "ho-gang.jpg", caption: "The HO gang.", alt: "Group photo of the HO gang" },
+        { type: "text", lines: [
+          "We played Truth or Dare.",
+          "You were dared to kiss me.",
+        ]},
+        { type: "text", emphasis: true, lines: [
+          "Neither of us wanted to.",
+          "We actually ran — through the school, trying to escape it.",
+        ]},
+        { type: "text", lines: [
+          "We ended up near the sports ground.",
+          "You kissed me.",
+        ]},
+        { type: "text", emphasis: true, lines: [
+          "It was the first kiss for both of us.",
+        ]},
+        { type: "text", small: true, lines: [
+          "I found out much later that you'd already started",
+          "falling for me by then.",
+          "I hadn't caught up yet.",
+        ]},
+      ],
+      outro: [
+        "The person I would eventually fall in love with —",
+        "was once someone I couldn't stand.",
+      ],
+    },
+
+    {
+      id: 3,
+      roman: "III",
+      title: "The Little Things",
+      mood: "tender",
+      blocks: [
+        { type: "text", lines: [
+          "One afternoon, in the tent by the sports ground,",
+          "we lay side by side on our bags.",
+        ]},
+        { type: "twobooks" },
+        { type: "text", lines: [
+          "I was reading a book. You were reading another one of mine.",
+          "Nothing dramatic happened.",
+        ]},
+        { type: "text", emphasis: true, lines: [
+          "We were just two people, lying beside each other, reading.",
+        ]},
+        { type: "photo", file: "saraswati-puja.jpg", caption: "Saraswati Puja, 11th grade.", alt: "Samanwita in a saree on Saraswati Puja" },
+        { type: "text", small: true, lines: [
+          "Maybe you didn't notice it then.",
+          "Maybe I didn't either.",
+          "But somewhere in moments this quiet —",
+          "I was already falling.",
+        ]},
+      ],
+      outro: [
+        "Maybe love didn't arrive all at once.",
+        "Maybe it was hiding in the little things.",
+      ],
+    },
+
+    {
+      id: 4,
+      roman: "IV",
+      title: "The First Chapter",
+      mood: "hopeful",
+      blocks: [
+        { type: "text", lines: [
+          "End of 11th standard. We watched Your Name at a friend's place.",
+        ]},
+        { type: "text", lines: [
+          "I told you how I felt right after.",
+        ]},
+        { type: "photo", file: "proposal.jpg", caption: "The day I told you.", alt: "Photo from the day of the proposal" },
+        { type: "text", lines: [
+          "We started actually dating about a month later.",
+        ]},
+        { type: "text", small: true, lines: [
+          "But right after, we barely spoke for a month.",
+          "It got awkward. Neither of us knew how to hold",
+          "what we'd just started.",
+        ]},
+        { type: "text", lines: [
+          "I didn't want to force something that felt uncomfortable.",
+          "So we broke up.",
+        ]},
+      ],
+      outro: [
+        "I thought that was the end.",
+        "…It wasn't.",
+      ],
+    },
+
+    {
+      id: 5,
+      roman: "V",
+      title: "The Chapters We Wish We Could Rewrite",
+      mood: "honest",
+      blocks: [
+        { type: "text", lines: [
+          "A month later, things started falling back into place.",
+          "We began talking again — nothing official, just… us, again.",
+        ]},
+        { type: "text", small: true, lines: [
+          "There was a girl named Urja for a while.",
+          "You got jealous. Looking back, you didn't need to be —",
+          "I just wasn't very good at saying that out loud.",
+          "I'm still not always.",
+        ]},
+        { type: "text", lines: [
+          "A friend of mine, Arunanshu, never liked you.",
+          "He talked me into doubting you. I was overthinking",
+          "everything anyway, since we weren't official.",
+        ]},
+        { type: "text", emphasis: true, lines: [
+          "One day he put you in a bad spot, right in front of me.",
+          "I didn't defend you.",
+        ]},
+        { type: "text", small: true, lines: [
+          "You thought I was immature. You were right to.",
+          "You broke it off. I regretted it for a long time.",
+        ]},
+        { type: "text", lines: [
+          "This isn't a chapter about him.",
+          "It's about the fact that I made a mistake,",
+          "and understood it too late.",
+        ]},
+        { type: "divider" },
+        { type: "text", lines: [
+          "In the middle of all that — physics tuition.",
+        ]},
+        { type: "objects" },
+        { type: "text", small: true, lines: [
+          "You went distant after. Forgot my birthday. Didn't talk much.",
+          "I kept thinking effort would fix it.",
+        ]},
+        { type: "text", lines: [
+          "Then, Nicco Park. I'd imagined that day as something special.",
+          "At the water park, another guy sang for you and you clung",
+          "to him. It hurt more than I let on.",
+        ]},
+        { type: "text", emphasis: true, lines: [
+          "We had a huge fight. You said you understood how I felt —",
+          "but couldn't give me exclusivity while focused on your career.",
+        ]},
+        { type: "text", small: true, lines: [
+          "I was dropping for JEE. You were dropping for NEET.",
+          "We stopped talking.",
+        ]},
+      ],
+      outro: [
+        "We were young.",
+        "We didn't always know what to do with what we felt.",
+      ],
+    },
+
+    {
+      id: 6,
+      roman: "VI",
+      title: "The Long Way Back",
+      mood: "hopeful",
+      blocks: [
+        { type: "text", small: true, lines: [
+          "I dated a junior, Tanisha, for a while — trying to detach.",
+          "I thought you'd moved on too.",
+        ]},
+        { type: "text", small: true, lines: [
+          "I kept comparing her to you. I never stopped.",
+          "It ended eventually. She later dated Arunanshu —",
+          "yes, that Arunanshu — and that friendship ended too.",
+        ]},
+        { type: "divider" },
+        { type: "text", lines: [
+          "Then I cracked JEE Main. DTU Computer Science.",
+        ]},
+        { type: "text", lines: [
+          "I sent you the result — partly just to show you.",
+        ]},
+        { type: "text", emphasis: true, lines: [
+          "You called me. Some excuse about a computer book.",
+          "You already knew I wasn't in computer science.",
+        ]},
+        { type: "text", lines: [
+          "I told you, \u201cNobody believed I could crack JEE.\u201d",
+        ]},
+        { type: "text", emphasis: true, lines: [
+          "You said you always had.",
+          "Just a gut feeling, you said.",
+        ]},
+        { type: "text", small: true, lines: [
+          "That hit me harder than you probably meant it to.",
+          "I realized I had never actually stopped loving you.",
+        ]},
+        { type: "divider" },
+        { type: "text", lines: [
+          "One day, in the college library, you called.",
+          "We talked for three, maybe four hours.",
+        ]},
+        { type: "text", small: true, lines: [
+          "Everything that had happened. How we'd changed.",
+          "College. NEET. Life.",
+        ]},
+        { type: "text", small: true, lines: [
+          "\u201cToday is the last day we're talking,\u201d you kept saying.",
+          "\u201cWe'll talk after NEET.\u201d",
+        ]},
+        { type: "text", emphasis: true, lines: [
+          "You kept coming back anyway.",
+          "Sometimes with an excuse. Sometimes just because.",
+        ]},
+      ],
+      outro: [
+        "One of the biggest walls between us was finally gone.",
+        "We fell, again, deeply.",
+      ],
+    },
+
+    {
+      id: 7,
+      roman: "VII",
+      title: "Durga Puja",
+      mood: "magical",
+      blocks: [
+        { type: "text", lines: [
+          "Kolkata. Durga Puja. We went pandal hopping,",
+          "wandered the city, ended up at Victoria Memorial.",
+        ]},
+        { type: "photo", file: "durga-puja.jpg", caption: "That night in Kolkata.", alt: "Photo from Durga Puja outing" },
+        { type: "text", small: true, lines: [
+          "We hadn't really talked about what we were.",
+          "It was just supposed to be a normal meeting.",
+        ]},
+        { type: "text", emphasis: true, lines: [
+          "Then, almost without deciding to — we held hands.",
+          "Neither of us planned it. Neither of us asked.",
+          "It just happened.",
+        ]},
+        { type: "text", lines: [
+          "We passed a little tent where a singer was performing.",
+          "He assumed we were already a couple.",
+        ]},
+        { type: "song", title: "Bhalobashar Mor Shum", artists: "Shreya Ghoshal \u00b7 Arijit Singh",
+          lines: ["He dedicated it to us."] },
+        { type: "text", small: true, lines: [
+          "We didn't talk about what we were.",
+          "We didn't need to.",
+          "Our hands answered first.",
+        ]},
+      ],
+      outro: [
+        "That night, for once, nothing needed explaining.",
+      ],
+    },
+
+    {
+      id: 8,
+      roman: "VIII",
+      title: "Finally, Us",
+      mood: "warm",
+      blocks: [
+        { type: "text", lines: [
+          "Back to long distance after Kolkata. First time we were",
+          "openly, actually a couple again.",
+        ]},
+        { type: "text", lines: [
+          "Then you found out about Tanisha. You cried.",
+          "It was the biggest fight of this chapter of us.",
+        ]},
+        { type: "text", emphasis: true, lines: [
+          "It was also the day you first said,",
+          "\u201cI love you.\u201d",
+        ]},
+        { type: "text", lines: [
+          "A few days later — boyfriend and girlfriend. Officially, finally.",
+        ]},
+        { type: "divider" },
+        { type: "text", small: true, lines: [
+          "Since then: distance, strict parents, NEET, college,",
+          "not enough time, cancelled plans, too much overthinking.",
+        ]},
+        { type: "text", small: true, lines: [
+          "We'd planned a date for my summer break. Your father",
+          "saw our messages. It got cancelled. That one hurt.",
+        ]},
+        { type: "text", small: true, lines: [
+          "I sometimes watch other couples get to just… be together,",
+          "and I wish that for us. I overthink when you go quiet",
+          "because of your parents, or NEET, or just no time.",
+        ]},
+        { type: "text", lines: [
+          "After a rough stretch of that for me, you started",
+          "showing up more. I noticed.",
+        ]},
+        { type: "photo", file: "umbrella.jpg", caption: "It was raining.", alt: "Samanwita under an umbrella in the rain" },
+        { type: "text", small: true, italic: true, lines: [
+          "It was raining.",
+          "You looked beautiful.",
+          "Your dad was right there.",
+          "So I behaved.",
+        ]},
+        { type: "text", emphasis: true, lines: [
+          "Ironically, we're in the best place we've ever been —",
+          "in the middle of being the most apart.",
+        ]},
+      ],
+      outro: [
+        "Distance is difficult.",
+        "It hasn't erased us.",
+      ],
+    },
+
+    {
+      id: 9,
+      roman: "IX",
+      title: "Always",
+      mood: "deep",
+      blocks: [
+        { type: "text", lines: [
+          "After every breakup.",
+          "Every misunderstanding.",
+          "Every attempt either of us made to move on.",
+          "Every stretch of distance.",
+        ]},
+        { type: "alwaysreveal" },
+        { type: "text", small: true, lines: [
+          "You know why that word matters to you.",
+          "It's mattered to me for a different reason for a while now.",
+        ]},
+        { type: "divider" },
+        { type: "text", lines: [
+          "We've talked about things I've never talked about",
+          "with anyone else. Engagement. Marriage. A life.",
+        ]},
+        { type: "text", small: true, lines: [
+          "I want to take you to Japan. You want China.",
+          "We'll probably do both, eventually.",
+        ]},
+        { type: "text", small: true, lines: [
+          "We've even, quietly, imagined a family. A girl and a boy.",
+        ]},
+      ],
+      outro: [
+        "We've spent so much time finding our way back to each other.",
+        "Maybe the best part is —",
+        "we still have so many chapters left.",
+      ],
+    },
+  ],
+
+  // ---------- CHAPTER 5 INTERACTIVE OBJECTS (physics tuition) ----------
+  objects: [
+    { icon: "chair", label: "The seat", text: "I always kept this one for you." },
+    { icon: "headphones", label: "The songs", text: "We'd sit there listening to Yo Yo songs, pretending to study." },
+    { icon: "heart", label: "The cake", text: "Our teacher's birthday cake had little heart decorations on it. We always ate half of them." },
+    { icon: "candy", label: "The gift", text: "I once wrapped your birthday gift to look like a giant piece of candy." },
+  ],
+
+  // ---------- FINAL CHAPTER / BIRTHDAY REVEAL ----------
+  finale: {
+    memoryStars: [
+      "A school corridor",
+      "Two books, side by side",
+      "A dare, and a first kiss",
+      "A kept seat",
+      "A heart from a cake",
+      "An umbrella in the rain",
+      "Kolkata, at night",
+      "A phone call that lasted hours",
+      "Two hands that didn't ask first",
+      "Always",
+    ],
+    lines: [
+      "After all these years…",
+      "After all the almosts…",
+      "After every goodbye…",
+      "After every time we thought the story was over…",
+    ],
+    pause: "Somehow…",
+    finalLine: "We're still writing it.",
+    headline: "Happy 21st Birthday, Samanwita",
+    closing: [
+      "Here's to everything we've already lived.",
+      "And to everything we haven't yet.",
+    ],
+    // The full letter — edit this freely. It's yours.
+    letter: `My Samanwita,
+
+Twenty-one. I keep trying to write something that sounds big enough for that, and it keeps coming out smaller and truer instead — so I'll just say the true thing.
+
+We didn't get here in a straight line. We disliked each other before we liked each other. We broke up before we really began. I let you down once, in a moment that mattered, and I've spent a long time trying to be someone who wouldn't do that again. I'm still not always good at saying what I feel — you know that better than anyone — but I'm still here, still choosing you, on purpose, again and again.
+
+I don't know why we kept finding our way back. Maybe it's not something either of us needs to figure out. I just know that whatever this is — it's survived enough versions of us to convince me it isn't going anywhere.
+
+There's still so much we haven't lived yet. I want to be there for it — the boring days and the big ones, Japan and China, whatever comes after "boyfriend and girlfriend."
+
+Happy birthday. I made you this because I remember. All of it.
+
+Always,
+BODHISATTWA SARKAR`,
+  },
+
+  // ---------- EASTER EGGS ----------
+  easterEggs: {
+    basically: "…she says \u201cbasically\u201d basically all the time.",
+    door: "That one old door. You know the one. It still makes that sound.",
+  },
+
+  // ---------- PHOTOS ----------
+  // Drop files with these exact names into /photos to replace the placeholders.
+  photoManifest: [
+    "proposal.jpg",
+    "umbrella.jpg",
+    "durga-puja.jpg",
+    "saraswati-puja.jpg",
+    "ho-gang.jpg",
+  ],
+};
